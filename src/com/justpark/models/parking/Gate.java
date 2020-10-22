@@ -1,13 +1,28 @@
 package com.justpark.models.parking;
 
+import com.justpark.models.AutoExitPanel;
 import com.justpark.models.DBObject;
+import com.justpark.models.accounts.Attendant;
+import com.justpark.models.parking.interfaces.PaymentEnabled;
 
-public abstract class Gate extends DBObject {
+public class Gate extends DBObject implements PaymentEnabled {
     private String gateName; //Gate2A, Gate3B
     private GateType type;
-    abstract void open();
-    abstract void close();
+    private Attendant attendant;
+    private AutoExitPanel exitPanel;
 
+    void open() {
+
+    }
+
+    void close() {
+
+    }
+
+    @Override
+    public void processTicket(Ticket ticket) {
+
+    }
 }
 
 /*

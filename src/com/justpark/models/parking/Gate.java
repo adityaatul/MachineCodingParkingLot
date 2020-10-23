@@ -1,6 +1,6 @@
 package com.justpark.models.parking;
 
-import com.justpark.models.AutoExitPanel;
+import com.justpark.models.electronics.AutoExitPanel;
 import com.justpark.models.DBObject;
 import com.justpark.models.accounts.Attendant;
 import com.justpark.models.parking.interfaces.PaymentEnabled;

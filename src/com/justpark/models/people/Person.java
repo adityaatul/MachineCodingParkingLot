@@ -5,7 +5,7 @@ import com.justpark.models.accounts.Account;
 
 public class Person extends DBObject {
     private String name;
-    private String address;
+    private Address address;
     private String phoneNumber;
     private final Account account;
 

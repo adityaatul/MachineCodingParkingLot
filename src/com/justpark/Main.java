@@ -7,12 +7,12 @@ public class Main {
     public static void main(String[] args) {
         // write your code here
         System.out.println("Hello World!");
-        Address a =  new Address.AddressBuilder()
+        Address a =  new Address.AddressBuilder("560082")
                 .setCountry("India")
                 .setState("Karnataka")
                 .setCity("Bangalore")
                 .setStreetAddress("B5611 Brigade Medows")
-                .setZipcode("560082")
                 .build();
+        System.out.println(a);
     }
 }

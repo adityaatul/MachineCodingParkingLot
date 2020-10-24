@@ -7,6 +7,17 @@ public class Address {
     private String streetAddress;
     private String zipcode;
 
+    @Override
+    public String toString() {
+        return "Address{" +
+                "country='" + country + '\'' +
+                ", state='" + state + '\'' +
+                ", city='" + city + '\'' +
+                ", streetAddress='" + streetAddress + '\'' +
+                ", zipcode='" + zipcode + '\'' +
+                '}';
+    }
+
     //Should be private , so that constructor is not accessible from outside.
     /*
     1. Order of param .
@@ -25,9 +36,12 @@ public class Address {
         private String country;
         private String state;
         private String city;
-        private String zipcode;
+        private String zipcode;//Making ZIP compulsory
         private String streetAddress;
 
+        public AddressBuilder(String zipcode){
+            this.zipcode = zipcode;
+        }
         public AddressBuilder setCountry(String country) {
             this.country = country;
             return this;

@@ -23,6 +23,11 @@ public class Gate extends DBObject implements PaymentEnabled {
     public void processTicket(Ticket ticket) {
 
     }
+
+    @Override
+    public void processPayment() {
+
+    }
 }
 
 /*

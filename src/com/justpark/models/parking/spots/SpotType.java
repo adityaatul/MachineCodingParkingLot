@@ -5,5 +5,5 @@ public enum SpotType {
     LARGE,
     HANDICAPPED,
     MOTORCYCLE,
-    ELECTRIC
+    ELECTRIC;
 }
